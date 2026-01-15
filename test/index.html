@@ -1,0 +1,20 @@
+<html>
+  <body>
+    <h1>draggability test</h1>
+
+    <label id="lbl1"></label>
+    <label id="lbl2"></label>
+
+    <script>
+      window.onload = () => {
+        const lbl1 = document.getElementById('lbl1');
+        const lbl2 = document.getElementById('lbl2');
+
+        document.addEventListener('mousemove', (event) => {
+          lbl1.innerText = 'mousedown';
+          lbl2.innerText = `x: ${event.offsetX}, y: ${event.offsetY}`;
+        });
+      }
+    </script>
+  </body>
+</html>

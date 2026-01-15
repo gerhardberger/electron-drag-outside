@@ -1,0 +1,10 @@
+let setup = () => {
+  console.warn('electron-drag-outside: Unsupported platform.');
+};
+
+if (process.platform === 'darwin') {
+  const binding = require('bindings')('electron_drag_outside.node');
+  setup = binding.setup;
+}
+
+module.exports = setup;
