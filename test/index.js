@@ -3,6 +3,8 @@ const electronDragOutside = require('../index');
 
 electronDragOutside();
 
+app.commandLine.appendSwitch("blink-settings", "showContextMenuOnMouseUp=true");
+
 app.on('ready', () => {
   const win = new BrowserWindow({
     width: 600,

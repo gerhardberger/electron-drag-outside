@@ -1,6 +1,6 @@
 {
   "name": "electron-drag-outside",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A native module that propagates mouse events to draggable areas in Electron on macOS.",
   "main": "index.js",
   "scripts": {
